@@ -1,0 +1,26 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.title {
+    border: solid #ffae42 1px;
+    background-color: rgb(29, 33, 13, 0.7);
+    text-align: center;
+    color: #ffae42;
+    
+}
+
+#questionContainer{
+    background-color: rgb(29, 33, 13, 0.7);
+    text-align: center;
+    color: #ffae42;
+    font-size:40px;
+}
+
+#answerContainer{
+    background-color: rgb(29, 33, 13, 0.7);
+    text-align: center;
+    color: #ffae42;
+    font-size: 20px;
+}
