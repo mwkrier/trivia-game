@@ -56,8 +56,8 @@ function displayChoices(){
 }
 
 // I have made numerous attempts on this homework and nothing is working except the above, 
-//I cannot figure out my next steps and no amount of googling or reviewing the activties are alleaviating 
-// my frustration.
+// I am missing a huge piece How do I get the user input after pushing this to the html, 
+// With out that use input I could not complete the next chunk of if statements and adding gifs and comments
 
 //move to the next question function maybe
 
