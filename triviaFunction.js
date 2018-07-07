@@ -33,6 +33,8 @@ console.log(triviaQuestions[0].answerList);
 $("#startGame").on("click", function(){
     displayQ();
     displayChoices();
+    //timerfunction
+
 });
 //DisplayQuestion
 function displayQ(){
@@ -53,8 +55,24 @@ function displayChoices(){
       answerDiv.append(newAnswerDiv);
 }
 
+// I have made numerous attempts on this homework and nothing is working except the above, 
+//I cannot figure out my next steps and no amount of googling or reviewing the activties are alleaviating 
+// my frustration.
+
+//move to the next question function maybe
+
+// some how collect user data and verify if correct
+// if user input === answer 
+// display correct and gif
+// else
+// display wrong and correct answer
+
+//set timer for each question at 15 seconds
+
+
+// final display box
+//display number right 
+//display number wrong
+// 
 
 }
-
-//};//Ending Tag for .ready
-
