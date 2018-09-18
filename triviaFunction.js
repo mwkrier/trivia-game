@@ -40,39 +40,17 @@ $("#startGame").on("click", function(){
 function displayQ(){
     $('#questionContainer').html("<p>" + triviaQuestions[0].question + "</p>");
 }
+
+
 //DisplayAnswerChoices
 function displayChoices(){
     //$('#answerContainer').html("<p>"+ triviaQuestions[0].answerList +"</p>");
     var answerDiv = $("#answerContainer");
 
-    // For Loop then loops through our total drink list...
     for (var i = 0; i < triviaQuestions[0].answerList.length; i++) {
 
-      // It then creates a new div for each drink. Note we create divs and add the content in the same line.
       var newAnswerDiv = $("<button>" + triviaQuestions[0].answerList[i] + "</button> <br> <br>");
 
-      // It then adds this new div to the drinkList div.
       answerDiv.append(newAnswerDiv);
-}
-
-// I have made numerous attempts on this homework and nothing is working except the above, 
-// I am missing a huge piece How do I get the user input after pushing this to the html, 
-// With out that use input I could not complete the next chunk of if statements and adding gifs and comments
-
-//move to the next question function maybe
-
-// some how collect user data and verify if correct
-// if user input === answer 
-// display correct and gif
-// else
-// display wrong and correct answer
-
-//set timer for each question at 15 seconds
-
-
-// final display box
-//display number right 
-//display number wrong
-// 
-
-}
+    }
+};

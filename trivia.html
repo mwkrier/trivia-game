@@ -1,27 +1,149 @@
 <!doctype html>
-<html>
-    
-    <head>
-        <title>Trivia!</title>
-        <link rel="stylesheet" type="text/css" href="triviaStyle.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body background="MASH.jpg">
-        <div class="container">
-           
-            <div class="title"> 
-                <h1> MASH TRIVIA GAME!</h1>
-                <h6>How well do you know MASH?</h6>
-                <button id="startGame"> Start Quiz! </button>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="triviaStyle.css">
+
+    <title>MASH Trivia!</title>
+  </head>
+  
+  <body background="MASH.jpg">
+    <div class="title">
+        <h1 class="title"> MASH TRIVIA GAME </h1>
+        <h6> How well do you know the TV show MASH?<h6>
+    </div>
+
+    <button id="start">START QUIZ</button>
+
+    <form id="form">
+    <div id="timer"></div>
+        <fieldset>
+            <legend>1. How long did MASH run?</legend>
+            <div>
+                <input type="radio" id="eleven" name="q1" checked />
+                <label for="q1">11 Years</label>
             </div>
-           
-            <div id="questionContainer" class=""></div>
-            
-            <div id="answerContainer"></div> 
+            <div>
+                <input type="radio" id="seven" name="q1" />
+                <label for="q1">7 Years</label>
+            </div>
+            <div>
+                <input type="radio" id="thirteen" name="q1" />
+                <label for="q1">13 Years</label>
+            </div>
+            <div>
+                <input type="radio" id="nine" name="q1" />
+                <label for="q1">9 Years</label>
+            </div>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>2. What does MASH Stand For?</legend>
+            <div>
+                <input type="radio" id="eleven" name="q2" checked />
+                <label for="q2">Mobile Army Survival Hospital</label>
+            </div>
+            <div>
+                <input type="radio" id="seven" name="q2" />
+                <label for="q2">Mobile Armed Surgery Hospital</label>
+            </div>
+            <div>
+                <input type="radio" id="thirteen" name="q2" />
+                <label for="q2">Mobile Army Surgical Hosiptal</label>
+            </div>
+            <div>
+                <input type="radio" id="nine" name="q2" />
+                <label for="q2">Mobile Army Salvation Hospice</label>
+            </div>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>3. Who was the second Commanding Officer?</legend>
+            <div>
+                <input type="radio" id="eleven" name="q3" checked />
+                <label for="q3"> Col. Potter</label>
+            </div>
+            <div>
+                <input type="radio" id="seven" name="q3" />
+                <label for="q3">Major Burns</label>
+            </div>
+            <div>
+                <input type="radio" id="thirteen" name="q2" />
+                <label for="q3">Lt. Col. Henry Blake</label>
+            </div>
+            <div>
+                <input type="radio" id="nine" name="q3" />
+                <label for="q3">Col. Flagg</label>
+            </div>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>4. Radar had a mini super power. What was it?</legend>
+            <div>
+                <input type="radio" id="eleven" name="q4" checked />
+                <label for="q4">He could heal animals.</label>
+            </div>
+            <div>
+                <input type="radio" id="seven" name="q4" />
+                <label for="q4">He could find anything.</label>
+            </div>
+            <div>
+                <input type="radio" id="thirteen" name="q4" />
+                <label for="q4">He could anticipate events.</label>
+            </div>
+            <div>
+                <input type="radio" id="nine" name="q4" />
+                <label for="q4">He could only eat a bitsize meal.</label>
+            </div>
+        </fieldset>
+    <br>
+        <fieldset>
+            <legend>5. Who were the original bunkmates in the swamp?</legend>
+            <div>
+                <input type="radio" id="eleven" name="q5" checked />
+                <label for="q5">Hawkeye, Frank, BJ</label>
+            </div>
+            <div>
+                <input type="radio" id="seven" name="q5" />
+                <label for="q5">Hawkeye, Trapper, Frank</label>
+            </div>
+            <div>
+                <input type="radio" id="thirteen" name="q5" />
+                <label for="q5">Hawkeye, Trapper, Frank, Spearchucker Jones</label>
+            </div>
+            <div>
+                <input type="radio" id="nine" name="q4" />
+                <label for="q4">Hawkeye, BJ, Frank, Trapper</label>
+            </div>
+            <br>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
 
-        <script src="triviaFunction.js"></script>    
-    </body>
+    <div id="lose">
+        <img src="images/mashLose.gif" alt="Monkey Muffins" width="300px"> 
+    </div>
+
+    <div id="win">
+        <img src="images/hawkeyeWin.gif" alt="Hawkeye Applause" width="300px">
+    </div>
+
+    <button id="tryAgain">Try Again</button>
+
+    <button id="level2">Level 2</button>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="trivia-func.js"></script>
+  </body>
 </html>
